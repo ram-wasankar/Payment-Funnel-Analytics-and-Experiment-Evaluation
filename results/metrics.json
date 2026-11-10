@@ -1,0 +1,64 @@
+{
+  "data": "seeded synthetic checkout events",
+  "unit": "randomized customer; one checkout each",
+  "customers": 8000,
+  "arms": {
+    "control": 4063,
+    "treatment": 3937
+  },
+  "conversion": {
+    "control": 0.7647058823529411,
+    "treatment": 0.7983235966471933,
+    "difference": 0.0336177142942522,
+    "ci95": [
+      0.015526349460277568,
+      0.05170907912822683
+    ],
+    "p_value": 0.00027048400408988054
+  },
+  "adjusted_conversion": {
+    "difference": 0.03107215837323423,
+    "standard_error": 0.00911571926238405,
+    "ci95": [
+      0.01320567692578396,
+      0.0489386398206845
+    ],
+    "method": "OLS linear probability model, HC1 robust covariance",
+    "covariates": [
+      "prior_conversion",
+      "customer_segment",
+      "merchant_segment"
+    ]
+  },
+  "refunds_per_exposed_customer": {
+    "control": 0.01944376076790549,
+    "treatment": 0.02235204470408941,
+    "difference": 0.0029082839361839197,
+    "ci95": [
+      -0.0033653192277389304,
+      0.00918188710010677
+    ],
+    "p_value": 0.3635666987685531,
+    "noninferiority_margin": 0.005,
+    "upper_bound_below_margin": false
+  },
+  "sample_ratio": {
+    "p_value": 0.15891714273926544,
+    "pass": true,
+    "threshold": 0.001
+  },
+  "power_plan": {
+    "baseline": 0.7,
+    "absolute_mde": 0.03,
+    "power": 0.8,
+    "alpha": 0.05,
+    "required_per_arm": 3554,
+    "met": true
+  },
+  "decision": "inconclusive; retain control",
+  "decision_scope": "Offline demonstration only; raw ITT conversion is primary, adjusted effect is supporting evidence.",
+  "input_sha256": {
+    "customers": "74841c53e51dc237d8f771e5365786af60843dddf3149bcbf12af81817ad584f",
+    "events": "82a4452e6b1f5bf1e16836890d09878f27324927d7c1e7a24bb4be8174a06d83"
+  }
+}

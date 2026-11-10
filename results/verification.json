@@ -1,0 +1,11 @@
+{
+  "command": "python -m unittest discover -s tests -v",
+  "python": "3.12.14",
+  "tests": 12,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "sql_engine": "SQLite executes common aggregation and window SQL; PostgreSQL-specific schema/cohort SQL not executed",
+  "tableau": "CSV exports and setup guide; no Tableau Desktop verification",
+  "log": "test_adjustment_recovers_known_linear_effect (test_pipeline.PipelineTests.test_adjustment_recovers_known_linear_effect) ... ok\ntest_allocation_check_catches_mismatch (test_pipeline.PipelineTests.test_allocation_check_catches_mismatch) ... ok\ntest_cohort_totals_reconcile (test_pipeline.PipelineTests.test_cohort_totals_reconcile) ... ok\ntest_difference_matches_hand_calculation (test_pipeline.PipelineTests.test_difference_matches_hand_calculation) ... ok\ntest_duplicate_events_do_not_inflate_conversion (test_pipeline.PipelineTests.test_duplicate_events_do_not_inflate_conversion) ... ok\ntest_event_times_follow_assignment (test_pipeline.PipelineTests.test_event_times_follow_assignment) ... ok\ntest_funnel_and_refund_invariants (test_pipeline.PipelineTests.test_funnel_and_refund_invariants) ... ok\ntest_power_plan_and_invalid_inputs (test_pipeline.PipelineTests.test_power_plan_and_invalid_inputs) ... ok\ntest_refund_uncertainty_blocks_positive_conversion_rollout (test_pipeline.PipelineTests.test_refund_uncertainty_blocks_positive_conversion_rollout) ... ok\ntest_seed_reproduces (test_pipeline.PipelineTests.test_seed_reproduces) ... ok\ntest_sql_aggregation_matches_python_and_retry_order (test_pipeline.PipelineTests.test_sql_aggregation_matches_python_and_retry_order) ... ok\ntest_unique_assignment_and_event_keys (test_pipeline.PipelineTests.test_unique_assignment_and_event_keys) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 1.417s\n\nOK\n"
+}
