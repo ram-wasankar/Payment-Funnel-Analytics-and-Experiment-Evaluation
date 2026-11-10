@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+data/*.csv
+results/*.csv
+results/*.svg
+!results/dashboard.svg
